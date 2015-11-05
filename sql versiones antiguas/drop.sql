@@ -1,0 +1,1 @@
+alter table catalogo drop column ubicacion

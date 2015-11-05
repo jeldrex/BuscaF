@@ -1,0 +1,1 @@
+ALTER TABLE catalogo alter COLUMN id_catalogo type VARCHAR( 20 )

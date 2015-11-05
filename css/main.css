@@ -1,0 +1,106 @@
+body {
+	margin-top: 0px;
+	background: #000066 ;
+	}
+a:link {
+	color: #000000;
+	text-decoration: none;
+	outline:0;
+	}
+a:visited {
+	color: #000000;
+	text-decoration: none;
+	}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	}
+a:active {
+	color: #000066;
+	text-decoration: none;
+	}
+	
+.texto_doc{
+	color: #333333;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 100;
+	font-variant: normal;
+	line-height: normal;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: justify;
+	}
+.linkpag{
+	color: #CC3366;
+	font-weight: bolder;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	}
+	
+.Estilo26 {color: #CCCC9A}
+.Estilo27 {color: #79793E}
+
+.Estilo1 {color: #CCCCCC}
+
+.Estilo2 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-decoration: none;
+	}
+
+.Estilo6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	font-style: italic;
+	line-height: normal;
+	text-decoration: none;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #333333;
+	}
+
+
+.Estilo7 {
+	color: #333333;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 100;
+	font-variant: normal;
+	text-transform: none;
+	line-height: normal;
+	text-decoration: none;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	}
+.ins {
+	color: #333333;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 100;
+	font-variant: normal;
+	text-transform: none;
+	line-height: normal;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.Estilo10 {color: #000000}
+.Estilo12 {font-size: 9px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.Estilo14 {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; }
+.Estilo17 {color: #FFFFFF}
+.Estilo18 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	}
+.Estilo22 {color: #666666; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold; }
+.Estilo23 {color: #ff0000;}
+.Login {color: #000066; font-family: Tahoma; font-size: 15px; font-weight: bold;}
+.paginacion {color: #ff0000;font-weight: bold;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 14px;}
+.paginacion2 {color: #000000;font-weight: bold;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 14px;}
+

@@ -1,0 +1,1 @@
+alter table archivo add column id_archivo serial primary key

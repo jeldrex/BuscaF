@@ -1,0 +1,187 @@
+Buscaf Patch Information
+
+--------------------------------------------------------------------------------
+- patch Alfa-2013.09.14
+--------------------------------------------------------------------------------
+- Se encontro un bug al intentar agregar un archivo con un simbolo ruso. Aún no se
+  soluciona, se agrego un catch para que el tamaño del archivo fuera 0.
+- Se encontro un bug al intentar obtener el tamaño de un directorio mayor a 4 GB.
+  Aún no se soluciona el error. Es seguro que tambien de problemas con nombres
+  con caracteres raros. Se agrego un catch para que el tamaño del directorio
+  fuera 0.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2012.07.09
+--------------------------------------------------------------------------------
+- Se agrego la funcion para busqueda avanzada.
+- Se agrego rawurlencode — Codificar estilo URL de acuerdo al RFC 3986.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2012.06.12
+--------------------------------------------------------------------------------
+- Se agrego GetRealSize para solucionar el problema de la lectura de archivos
+  mayores a 4 GB, ahora el límite es de 8 GB ;-)
+- Se corrigio el tipo de dato de la tabla archivo, el campo tamaño paso de 
+  character varying a bigint.
+- En formato para peliculas, se agrego 1080p y 720p.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.07.08
+--------------------------------------------------------------------------------
+- Se agrego un boton para limpiar el txtSearch.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.05.28
+--------------------------------------------------------------------------------
+- Se agrego la tabla ubicaciones a la base de datos.
+- Se modifico el codigo fuente para que el combo de las ubicaciones se llenara a
+  partir de los datos de la tabla ubicaciones.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.04.02
+--------------------------------------------------------------------------------
+- Se cambio en suggestedbox.
+- Se cambio el menu vertical.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.01.28
+--------------------------------------------------------------------------------
+- Se agrego la posibilidad de mostrar un preview de archivos flv, mp4, avi, mkv, 
+  el preview es obtenido con kmplayer, suprimiendo a ffmpeg-php por ser muy inestable.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.01.22
+--------------------------------------------------------------------------------
+- Se elimino la posibilidad de extraer informacion de video flv, mp4, mkv, avi,
+  ya que el sistema quedaba muy propenso a fallos. Se restauro al ultimo backup.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.01.18
+--------------------------------------------------------------------------------
+- Se agrego la posibilidad de extraer informacion de video flv, mp4, mkv, avi, extrayendo
+  informacion de duracion, tamaño, bitrate, entre otros.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.01.17
+--------------------------------------------------------------------------------
+- Se corrio rpc.php, el suggetedbox ahora muestra "La busqueda no tuvo resultados"
+  cuando no hay resultados, ya que antes seguia mostrando resultados a pesar de no
+  haberlos.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2011.01.15
+--------------------------------------------------------------------------------
+- Se modifico la base de datos, a la tabla usuario se agrego la clave id, de esta forma los
+  catalogos quedan asociados al id del usuario y no a un nombre, que siempre esta cambiando.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.12.23
+--------------------------------------------------------------------------------
+- Se modifico la base de datos, a la tabla catalogo se agrego la clave foranea rut, cada catalogo
+  queda asociado a su dueño.
+- Se corrigio el mensaje de Configuracion, al actualizar los datos.
+- Se corrigio la tabla donde se muestra el preloader.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.11.18
+--------------------------------------------------------------------------------
+- Se agrego la clase Conexion, que crea un objeto para usar la conexion de postgresql (No tiene
+  mucho sentido en todo caso).
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.11.07
+--------------------------------------------------------------------------------
+- Se modifico el menu de opciones, reemplazandolo por un css .
+- Se agrego onclick = "if (! confirm('Confirma eliminar el catálogo?')) return false;" para
+  que pregunte antes de borrar un catalogo .
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.11.06
+--------------------------------------------------------------------------------
+- Se agrego autocomplete="off" a los formularios para que no moleste el autocomplete del
+  navegador.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.09.13
+--------------------------------------------------------------------------------
+- Se corrigio Auto Completer, permite sugerir busquedas rapidas en el inicio.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.09.10
+--------------------------------------------------------------------------------
+- Se corrigio el estilo de _pagi_info, agregando paginacion2 al css svti.css.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.09.04
+--------------------------------------------------------------------------------
+- Se unificaron los sistemas buscaf y peliculas.
+- Se agrego id_pelicula bigserial NOT NULL a la tabla peliculas.
+- Se corrigieron las funciones de peliculas para que trabajen con el id_peliculas.
+- Se corrigieron las funciones de catalogos para que trabajen con el id_cat.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.08.23
+--------------------------------------------------------------------------------
+- Se eliminaron los cuadros de mensajes estilo Fb, y se agregaron unos con jquery (jquery y prototype tiene un conflicto).
+	var q = jQuery.noConflict(); sirve para solucionar el conflicto de los $
+- Se ordeno y elimino codigo que no se ocupaba.
+- Se agrego jquery.validate.js para validar el ingreso de la busqueda no sea en blanco.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.08.14
+--------------------------------------------------------------------------------
+- Se agrego dirSize para obtener el tamaño de los directorios.
+- Se elimino sub_carpetas y tam_catalogo de la tabla catalogo.
+- Se agrego un preloader en ajax, ahora se muestra un gif loading al cargar los catalogos
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.08.06
+--------------------------------------------------------------------------------
+- Se agrego el css Button.css con el estilo original de botones fb :p
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.07.31
+--------------------------------------------------------------------------------
+- Se corrigio el error que provocava que el mensaje de confirmacion en gestion_catalogos apareciera permanentemente, se agrego la linea
+  $_pagi_propagar = array(""); en gestion_catalogos.php
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.07.21
+--------------------------------------------------------------------------------
+- Copiado estilo de facebook para los botones
+- Se agrego un javascript que hace desaparecer el cuadro de mensajes
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.07.15
+--------------------------------------------------------------------------------
+- Se agregó el javascript para que el cursor index.php aparesca por defecto en focus.
+- Se agregó el javascript para que el cursor upload.php aparesca por defecto en focus.
+- Se agregó el cuadro de mensajes amarillo, copiado integramente de facebook :p
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.05.23
+--------------------------------------------------------------------------------
+- Se agrego el formulario de las busquedas al listado de resultados de search.php, de esta forma se permite realizar
+  una nueva busqueda a traves del listado de resultados.
+- El parametro $_pagi_cuantos se modifico para que la navegacion por los resultados fuera más comoda.
+- Se agrego el codigo en ajax ajax_comprobar_nick.php, para verificar si un catalogo existe en la Base de datos.
+- Se agrego el formulario para poder modificar el nick del usuario, nombre y password.
+- Se corrigo el bug que generaba que se mostrara dos veces el mismo mensaje de Exitosamente modificado.
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.05.03
+--------------------------------------------------------------------------------
+- Se agrego un contador de tiempo para indicar cuanto se demora la consulta
+
+--------------------------------------------------------------------------------
+- patch Alfa-2010.04.24
+--------------------------------------------------------------------------------
+- Se corrigio el estilo css del paginador, agregando paginacion a svti.css  .
+- Se corrigio un bug al obtener la extension de los archivos al agregar un catalogo .
+- Se elimino de las tablas de resultados el nombre repetido para cada archivo .
+- Se agrego la columna " id_archivo serial NOT NULL PRIMARY KEY" a la tabla archivo,
+  y se creó el indice indice_archivo con id_archivo usando btree .
+- Se agrego indice_catalogo usando hash a la tabla catalogo .
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

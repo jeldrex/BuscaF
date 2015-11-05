@@ -1,0 +1,11 @@
+
+body{
+font-size:62.5%;font-family:verdana,arial,sans-serif;
+}
+
+.form p{margin-top:15px;font-size:12px;}
+.tooltip{display:none;z-index:1000;position:absolute;text-align:left;padding:5px;max-width:400px;min-width:80px;font-size:10px;font-weight:normal;line-height:1.5em;border:2px double white;background:black;color:white;opacity:1.0;-moz-border-radius:5px;}
+.tooltip .highlight{color:#f60;font-style:normal;font-weight:bold;}#private{vertical-align:bottom;}img{border:0;}
+
+.info{cursor:help;}
+.infoP:hover{text-decoration:underline;}a{text-decoration:none;color:blue;}
