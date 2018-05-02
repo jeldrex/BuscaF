@@ -14,6 +14,8 @@ BuscaF fue pensado con un nivel de sencillez tan básico que permite a cualquier
 
 Permite indexar el contenido de un DVD, CD, pendrive, o lo que sea. Aquí se debe dar el nombre al disco, la ruta donde se encuentra, y donde se esta guardando ( ubicación ). Al dar clic en Agregar Catálogo será indexado en la BBDD (PostgreSQL).
 
+![Pantalla Agregar](https://github.com/jeldrex/BuscaF/blob/master/2018-05-01%2021%2021%2014.png)
+
 # Autor
 
 (c) 2013 Rodrigo Eduardo Jeldres Carrasco
