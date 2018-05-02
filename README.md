@@ -8,7 +8,7 @@ Todos tenemos colecciones de CD, DVD, unidades extraíbles, disquetes, unidad de
 
 BuscaF fue pensado con un nivel de sencillez tan básico que permite a cualquier jefe poder entenderlo. Así de fácil. Un TextBox donde ingresar el nombre del archivo que se necesita, y clic en Buscar.
 
-![alt tag](BuscaF/2018-05-01 21 09 30.png)
+![alt tag](https://github.com/jeldrex/BuscaF/blob/master/2018-05-01%2021%2009%2030.png)
 
 # Agregando Catálogos
 
