@@ -8,6 +8,8 @@ Todos tenemos colecciones de CD, DVD, unidades extraíbles, disquetes, unidad de
 
 BuscaF fue pensado con un nivel de sencillez tan básico que permite a cualquier jefe poder entenderlo. Así de fácil. Un TextBox donde ingresar el nombre del archivo que se necesita, y clic en Buscar.
 
+![Pantalla principal](2018-05-01 21 09 30.png)
+
 # Agregando Catálogos
 
 Permite indexar el contenido de un DVD, CD, pendrive, o lo que sea. Aquí se debe dar el nombre al disco, la ruta donde se encuentra, y donde se esta guardando ( ubicación ). Al dar clic en Agregar Catálogo será indexado en la BBDD (PostgreSQL).
